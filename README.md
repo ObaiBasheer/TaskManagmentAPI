@@ -7,7 +7,7 @@ Version: 1.0.0
 
 Summary: Get all tasks
 
-# Responses:
+ Responses:
 
 200: Successful response (array of TaskModel)
 400: Bad request
