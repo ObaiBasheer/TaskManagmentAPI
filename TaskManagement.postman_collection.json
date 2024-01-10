@@ -1,0 +1,1104 @@
+{
+	"info": {
+		"_postman_id": "939cf981-484e-4d76-8acf-4e9088f21f2d",
+		"name": "TaskManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21136627",
+		"_collection_link": "https://www.postman.com/universal-station-776923/workspace/30-days-of-postman-for-developers/collection/21136627-939cf981-484e-4d76-8acf-4e9088f21f2d?action=share&source=collection_link&creator=21136627"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Assignee",
+					"item": [
+						{
+							"name": "/api/Assignee",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": "{{baseUrl}}/api/Assignee"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": "{{baseUrl}}/api/Assignee"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"email\": \"<string>\",\n    \"tasks\": [\n      {\n        \"id\": \"<integer>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"assigneeId\": \"<integer>\",\n        \"dueDate\": \"<dateTime>\",\n        \"statusId\": \"<integer>\",\n        \"assignee\": {\n          \"value\": \"<Circular reference to #/components/schemas/Assignee detected>\"\n        },\n        \"status\": {\n          \"id\": \"<integer>\",\n          \"name\": \"<string>\",\n          \"tasks\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            }\n          ]\n        }\n      },\n      {\n        \"id\": \"<integer>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"assigneeId\": \"<integer>\",\n        \"dueDate\": \"<dateTime>\",\n        \"statusId\": \"<integer>\",\n        \"assignee\": {\n          \"value\": \"<Circular reference to #/components/schemas/Assignee detected>\"\n        },\n        \"status\": {\n          \"id\": \"<integer>\",\n          \"name\": \"<string>\",\n          \"tasks\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            }\n          ]\n        }\n      }\n    ]\n  },\n  {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"email\": \"<string>\",\n    \"tasks\": [\n      {\n        \"id\": \"<integer>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"assigneeId\": \"<integer>\",\n        \"dueDate\": \"<dateTime>\",\n        \"statusId\": \"<integer>\",\n        \"assignee\": {\n          \"value\": \"<Circular reference to #/components/schemas/Assignee detected>\"\n        },\n        \"status\": {\n          \"id\": \"<integer>\",\n          \"name\": \"<string>\",\n          \"tasks\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            }\n          ]\n        }\n      },\n      {\n        \"id\": \"<integer>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"assigneeId\": \"<integer>\",\n        \"dueDate\": \"<dateTime>\",\n        \"statusId\": \"<integer>\",\n        \"assignee\": {\n          \"value\": \"<Circular reference to #/components/schemas/Assignee detected>\"\n        },\n        \"status\": {\n          \"id\": \"<integer>\",\n          \"name\": \"<string>\",\n          \"tasks\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n            }\n          ]\n        }\n      }\n    ]\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Assignee",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"name\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/api/Assignee"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"name\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Assignee"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\",\n  \"tasks\": [\n    {\n      \"id\": \"<integer>\",\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeId\": \"<integer>\",\n      \"dueDate\": \"<dateTime>\",\n      \"statusId\": \"<integer>\",\n      \"assignee\": {\n        \"value\": \"<Circular reference to #/components/schemas/Assignee detected>\"\n      },\n      \"status\": {\n        \"id\": \"<integer>\",\n        \"name\": \"<string>\",\n        \"tasks\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeId\": \"<integer>\",\n      \"dueDate\": \"<dateTime>\",\n      \"statusId\": \"<integer>\",\n      \"assignee\": {\n        \"value\": \"<Circular reference to #/components/schemas/Assignee detected>\"\n      },\n      \"status\": {\n        \"id\": \"<integer>\",\n        \"name\": \"<string>\",\n        \"tasks\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Task detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Tasks",
+					"item": [
+						{
+							"name": "GetById",
+							"item": [
+								{
+									"name": "/api/Tasks/GetById",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks/GetById?taskId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks",
+												"GetById"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/GetById?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"GetById"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"data\": [\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    },\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    }\n  ],\n  \"message\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\"\n}"
+										},
+										{
+											"name": "Bad Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/GetById?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"GetById"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"ut_67d\": \"<string>\"\n}"
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/GetById?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"GetById"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"detail\": \"<string>\",\n  \"instance\": \"<string>\",\n  \"ad8\": {}\n}"
+										},
+										{
+											"name": "Server Error",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/GetById?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"GetById"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Delete",
+							"item": [
+								{
+									"name": "/api/Tasks/Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks/Delete?taskId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks",
+												"Delete"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/Delete?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"Delete"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/Delete?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"Delete"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"detail\": \"<string>\",\n  \"instance\": \"<string>\",\n  \"ad8\": {}\n}"
+										},
+										{
+											"name": "Server Error",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/Delete?taskId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"Delete"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Assign",
+							"item": [
+								{
+									"name": "/api/Tasks/Assign",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks/Assign?taskId=<integer>&assigneeId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks",
+												"Assign"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												},
+												{
+													"key": "assigneeId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/Assign?taskId=<integer>&assigneeId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"Assign"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														},
+														{
+															"key": "assigneeId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/Assign?taskId=<integer>&assigneeId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"Assign"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														},
+														{
+															"key": "assigneeId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"detail\": \"<string>\",\n  \"instance\": \"<string>\",\n  \"ad8\": {}\n}"
+										},
+										{
+											"name": "Server Error",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Tasks/Assign?taskId=<integer>&assigneeId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Tasks",
+														"Assign"
+													],
+													"query": [
+														{
+															"key": "taskId",
+															"value": "<integer>"
+														},
+														{
+															"key": "assigneeId",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GenerateReport",
+							"item": [
+								{
+									"name": "/api/Tasks/GenerateReport",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": "{{baseUrl}}/api/Tasks/GenerateReport"
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": "{{baseUrl}}/api/Tasks/GenerateReport"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "<string>"
+										},
+										{
+											"name": "Server Error",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": "{{baseUrl}}/api/Tasks/GenerateReport"
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Tasks",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": "{{baseUrl}}/api/Tasks"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": "{{baseUrl}}/api/Tasks"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"data\": [\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    },\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    }\n  ],\n  \"message\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\"\n}"
+								},
+								{
+									"name": "Server Error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{baseUrl}}/api/Tasks"
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Tasks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"assignee\": \"<integer>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/api/Tasks"
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"assignee\": \"<integer>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Tasks"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"data\": [\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    },\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    }\n  ],\n  \"message\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\"\n}"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"assignee\": \"<integer>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Tasks"
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"ut_67d\": \"<string>\"\n}"
+								},
+								{
+									"name": "Server Error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"assignee\": \"<integer>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseUrl}}/api/Tasks"
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Tasks",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Tasks?taskId=<integer>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Tasks"
+									],
+									"query": [
+										{
+											"key": "taskId",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks?taskId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"data\": [\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    },\n    {\n      \"title\": \"<string>\",\n      \"description\": \"<string>\",\n      \"assigneeName\": \"<string>\",\n      \"statusName\": \"<string>\"\n    }\n  ],\n  \"message\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"title\": \"<string>\"\n}"
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks?taskId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"detail\": \"<string>\",\n  \"instance\": \"<string>\",\n  \"ad8\": {}\n}"
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks?taskId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"detail\": \"<string>\",\n  \"instance\": \"<string>\",\n  \"ad8\": {}\n}"
+								},
+								{
+									"name": "Server Error",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"dueDate\": \"<dateTime>\",\n  \"status\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Tasks?taskId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Tasks"
+											],
+											"query": [
+												{
+													"key": "taskId",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
