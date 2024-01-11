@@ -142,10 +142,13 @@ namespace TaskManagmentAPI.Controllers
             existingTask.Description = task.Description;
             existingTask.DueDate = task.DueDate;
             existingTask.StatusId = task.Status;
+            existingTask.AssigneeId = task.Assignee;
 
             try
             {
                 await _context.SaveChangesAsync();
+
+                if (await SendAssignmentEmailAsync(existingTask.Assignee!.Email, task.Title!)) return Ok("Task Is Assigned and Email is send ");
             }
             catch (DbUpdateConcurrencyException)
             {
