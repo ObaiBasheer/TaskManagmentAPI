@@ -163,7 +163,7 @@ namespace TaskManagmentAPI.Controllers
                 }
             }
 
-            return new RequestJsonData(null, $"Task with Id {taskId} Updated Successfully", 200, "Successful Update");
+            return new RequestJsonData(null!, $"Task with Id {taskId} Updated Successfully", 200, "Successful Update");
         }
 
         [HttpDelete("Delete")]
